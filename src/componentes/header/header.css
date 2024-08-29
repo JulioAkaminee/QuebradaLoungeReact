@@ -1,0 +1,40 @@
+@import url('../../padronizacao/variaveis.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    margin-top: 30px;
+}
+header{
+    padding: 15px;
+    background-color: var(--cor-primaria);
+    font-size: var(--font-size-m);
+    display: flex;
+    flex-direction: column;
+  
+}
+
+header div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header input{
+    width: 100%;
+    border: none;
+    height: 40px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#menu-hamburguer, #carrinho{
+    cursor: pointer;
+}
