@@ -1,0 +1,44 @@
+@import url("../../padronizacao/variaveis.css");
+
+#container-menu{
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    z-index: 99999;
+    position: fixed;
+   
+}
+#container-menu button{
+    display: flex;
+    width: 80%;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    
+    margin: 10px auto;
+    border-radius: 12px;
+    background: #171612;
+    border: none;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+}
+#menu-area-login{
+    background-color:  var(--cor-primaria);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#user-login-icon{
+    display: flex;
+    align-items: center;
+}
