@@ -1,14 +1,17 @@
 @import url("../../padronizacao/variaveis.css");
 
-#container-menu{
+.container-menu{
     width: 50%;
     height: 100vh;
     background-color: white;
     z-index: 99999;
     position: fixed;
+    left: 0;
+    top: 0;
+   
    
 }
-#container-menu button{
+.container-menu button{
     display: flex;
     width: 80%;
     height: 48px;
@@ -31,14 +34,38 @@
     line-height: normal;
   
 }
-#menu-area-login{
+.menu-area-login{
     background-color:  var(--cor-primaria);
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
 
-#user-login-icon{
+.user-login-icon{
     display: flex;
     align-items: center;
+}
+.user-login-icon>p{
+    font-family: var(--font-family-raleway);
+    font-weight: 700;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    width: 80%;
+}
+
+ul>li{
+    display: flex;
+    align-items: center;
+    
+}
+
+li>p{
+    padding: 0 15px;
+    font-size: var(--font-size-m);
+    font-family: var(--font-family-raleway);
+    font-weight: 700;
 }

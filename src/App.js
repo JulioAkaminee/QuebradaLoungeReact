@@ -8,8 +8,8 @@ import Menu from "./componentes/menu/menu.js";
 function App() {
   return (
     <>
-    <Header textoInput="Pesquisar..." />
     <Menu/>
+    <Header textoInput="Pesquisar..." />
     <Footer/>
     </>
     
