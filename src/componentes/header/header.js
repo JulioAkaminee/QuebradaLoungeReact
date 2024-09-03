@@ -19,23 +19,23 @@ function Header(props) {
         <img id="logo" src="../assets/icons/logo-mobile.svg" alt="Logo" />
       </div>
       <div>
-        <img
-          onClick={toggleMenu}
-          id="menu-hamburguer"
-          src="../assets/icons/Menu Hamburguer.png"
-          alt="Menu"
-        />
+      <span  id="menu-hamburguer" class="material-symbols-outlined" onClick={toggleMenu}>
+menu
+</span>
+        
         <input type="text" placeholder={props.textoInput} />
-        <img id="carrinho" src="../assets/icons/carrinho-icon.svg" alt="Carrinho" />
+        <span id="carrinho" class="material-symbols-outlined">
+shopping_cart
+</span>
       </div>
 
       {/* Menu */}
       <div className={`menu-container ${isOpen ? 'open' : ''}`}>
         <nav className={`container-menu ${isOpen ? 'open' : ''}`}>
           <div className="menu-area-login">
-            <div>
+            <div className="user-login-container">
               <div className="user-login-icon">
-                <img src="../assets/icons/perfil-icon.svg" alt="Ícone de perfil" />
+                <span class="material-symbols-outlined">person</span>
                 <p>Entrar</p>
               </div>
               <img src="../assets/icons/logo-desktop.svg" alt="Logo desktop" />
@@ -45,12 +45,14 @@ function Header(props) {
 
           <div className="navigation">
             <ul>
-              <li><img src="../assets/icons/inicio-icon.svg" alt="Ícone de Início" /> <p>Início</p></li>
-              <li><img src="../assets/icons/produtos-icon-svg.svg" alt="Ícone de Produtos" /> <p>Produtos</p></li>
-              <li><img src="../assets/icons/localização-icon-svg.svg" alt="Ícone de Localização" /> <p>Localização</p></li>
-              <li><img src="../assets/icons/shows-iocn-svg.svg" alt="Ícone de Shows" /><p> Shows</p></li>
-              <li><img src="../assets/icons/faleConosco-icon-svg.svg" alt="Ícone de Fale Conosco" /> <p>Fale Conosco</p></li>
-              <li><img src="../assets/icons/nosConheca-icon-svg.svg" alt="Ícone de Nos Conheça" /> <p>Nos Conheça</p></li>
+              <li><span class="material-symbols-outlined">home</span> <p>Início</p></li>
+
+              <li><span class="material-symbols-outlined">liquor</span><p>Produtos</p></li>
+
+              <li><span class="material-symbols-outlined">map</span> <p>Localização</p></li>
+              <li><span class="material-symbols-outlined">mic_external_on</span><p> Shows</p></li>
+              <li><span class="material-symbols-outlined">chat</span><p>Fale Conosco</p></li>
+              <li><span class="material-symbols-outlined">info</span> <p>Nos Conheça</p></li>
             </ul>
           </div>
         </nav>

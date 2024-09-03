@@ -33,15 +33,27 @@ header input {
     width: 100%;
     border: none;
     height: 40px;
+    background: none;
     padding: 15px;
     margin: 15px;
-    border-radius: 10px;
+    border-bottom: solid black 2px;
+    color: black;
+    font-size: var(--font-family-poppins);
     outline: none;
+    font-size: 14px;
+}
+input::placeholder{
+    color: black;
+  
 }
 
 /* Estilos para os ícones do menu e carrinho */
 #menu-hamburguer, #carrinho {
     cursor: pointer;
+    font-weight: 900;
+   
+    font-size: 30px;
+
 }
 
 /* Estilos para o menu lateral */
@@ -97,6 +109,8 @@ header input {
     margin: 30px 0;
     display: flex;
     align-items: center;
+    
+    
 }
 
 .user-login-icon > p {
@@ -131,6 +145,14 @@ li > p {
     font-size: var(--font-size-m);
     font-family: var(--font-family-raleway);
     font-weight: 700;
+}
+.user-login-container{
+    width: 90%;
+
+    img{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 /* Estilos para o overlay */
