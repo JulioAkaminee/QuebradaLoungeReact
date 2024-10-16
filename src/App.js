@@ -1,18 +1,14 @@
-import Header from "./componentes/header/header.js";
-import Footer from "./componentes/footer/footer.js";
-
-
-
+// App.js
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './routers/router';
 
 
 function App() {
   return (
-    <>
-   
-    <Header textoInput="Pesquisar..." />
-    <Footer/>
-    </>
-    
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 

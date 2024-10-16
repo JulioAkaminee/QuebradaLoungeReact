@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './header.css'; // Corrigido para refletir o padrão de importação CSS
-
+import { Link } from "react-router-dom";
 function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -45,11 +45,15 @@ shopping_cart
 
           <div className="navigation">
             <ul>
-              <li><span class="material-symbols-outlined">home</span> <p>Início</p></li>
+              <li><span class="material-symbols-outlined">home</span> <Link to="/">
+                <p>Início</p>
+              </Link></li>
 
               <li><span class="material-symbols-outlined">liquor</span><p>Produtos</p></li>
 
-              <li><span class="material-symbols-outlined">map</span> <p>Localização</p></li>
+              <li><span class="material-symbols-outlined">map</span> <Link to="/localizacao">
+                <p>Localização</p>
+              </Link></li>
               <li><span class="material-symbols-outlined">mic_external_on</span><p> Shows</p></li>
               <li><span class="material-symbols-outlined">chat</span><p>Fale Conosco</p></li>
               <li><span class="material-symbols-outlined">info</span> <p>Nos Conheça</p></li>
