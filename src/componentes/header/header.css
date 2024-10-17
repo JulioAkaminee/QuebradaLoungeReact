@@ -31,7 +31,13 @@ header div {
     align-items: center;
     justify-content: center;
 }
-
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:var(--cor-secundaria);
+}
 header input {
     width: 100%;
     border-radius: 8px;
@@ -146,6 +152,8 @@ cursor: pointer;
     align-items: center;
     margin-bottom: 10px;
     transition: 200ms ease-in-out;
+ 
+
    
  
 }
@@ -236,6 +244,31 @@ cursor: pointer;
 }
 .iconLogin{
     cursor: pointer;
+    transition: 300ms;
+}
+.iconLogin:hover{
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 12px;
+}
+.iconLogin:active{
+    background-color: var(--cor-secundaria);
+    color: white;
+    transition: 0;
+   
+}
+.carrinho_header span:active{
+    background-color: var(--cor-secundaria);
+    color: white;
+    transition: 0;
+   
+}
+.carrinho_header span:hover{
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
 }
 
 .material-symbols-outlined {
@@ -257,11 +290,13 @@ cursor: pointer;
 .carrinho_header{
     
     margin:0  10px;
+ 
    
 }
 .carrinho_header span{
     font-size: 33px;
     cursor: pointer;
+    transition: 300ms;
 }
 
 
@@ -297,6 +332,7 @@ cursor: pointer;
     font-size: var(--font-size-m); /* Tamanho da fonte */
     font-weight: 500; /* Peso da fonte */
     transition: color 0.3s; /* Transição suave para a cor */
+    display: ruby;
 }
 
 /* Estilos para a linha horizontal */

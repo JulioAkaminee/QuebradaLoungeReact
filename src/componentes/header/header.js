@@ -24,7 +24,7 @@ return (
         menu
       </span>
 
-      <input type="text" placeholder={props.textoInput} />
+      <input type="text" placeholder="Pesquisar..."/>
       <span id="carrinho" class="material-symbols-outlined">
         shopping_cart
       </span>
@@ -80,15 +80,17 @@ return (
       <Link to="/"><img src="../assets/icons/logo-desktop.svg" alt="" /></Link>
 
       <form action="#" className="pesquisa">
-        <input id="barra-pesquisa" type="text" name="barra-pesquisa" placeholder="Pesquisar..." />
+        <input id="barra-pesquisa" type="text" name="barra-pesquisa" placeholder="Pesquisar..."  />
       
       </form>
-      <div className="iconLogin">
-        <span class="material-symbols-outlined">
-          person
-        </span>
-        <p>Olá, Faça seu login</p>
-      </div>
+      <Link to="/loginUsuario" className="login">
+        <div className="iconLogin">
+          <span class="material-symbols-outlined">
+            person
+          </span>
+          <p>Olá, Faça seu login</p>
+        </div>
+      </Link>
       <div className="carrinho_header">
         <span class="material-symbols-outlined">
           shopping_cart
