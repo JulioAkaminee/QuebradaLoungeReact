@@ -14,33 +14,32 @@
 }
 
 /* Estilos para o header */
-header {
-    padding: 15px;
+.mobile{
+    padding: 15px 15px 25px 15px;
     background-color: var(--cor-primaria);
     font-size: var(--font-size-m);
-    display: flex;
+    display: none;
     flex-direction: column;
+   
+    z-index: 10;
+   
 }
 
 header div {
     
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 header input {
     width: 100%;
+    border-radius: 8px;
+    background: #FFF;
+    width: 90%;
+    padding: 10px 15px;
     border: none;
-    height: 40px;
-    background: none;
-    padding: 15px;
     margin: 15px;
-    border-bottom: solid black 2px;
-    color: black;
-    font-size: var(--font-family-poppins);
-    outline: none;
-    font-size: 14px;
 }
 input::placeholder{
     color: black;
@@ -77,14 +76,14 @@ input::placeholder{
 /* Estilos para o botão dentro do menu */
 .container-menu button {
     display: flex;
-    width: 80%;
+    width: 90%;
     height: 48px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
     margin: 10px auto;
-    border-radius: 12px;
+    border-radius: 8px;
     background: #171612;
     border: none;
     color: #FFF;
@@ -103,19 +102,30 @@ input::placeholder{
     flex-direction: column;
     padding: 30px 0;
 }
+.menu-area-login button{
+cursor: pointer;
+}
 
 /* Estilos para o ícone de usuário e texto de login */
 .user-login-icon {
     margin: 30px 0;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
     
-    
+}
+.user-login-icon span{
+    font-size: 40px;
 }
 
 .user-login-icon > p {
     font-family: var(--font-family-raleway);
     font-weight: 700;
+   
 }
 
 /* Estilos para a navegação dentro do menu */
@@ -125,34 +135,58 @@ input::placeholder{
     margin-top: 15px;
 }
 
-ul {
-    width: 80%;
+.navigation ul {
+    width: 90%;
     list-style: none;
     padding: 0;
 }
 
-ul > li {
+.navigation ul li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    transition: 200ms ease-in-out;
+   
+ 
 }
-li>img{
-    width: 45px;
+.navigation ul li:hover{
+    color: white;
+    background-color: var(--cor-secundaria);
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.navigation ul li span{
+    font-size: 40px;
+}
 
+
+.navigation ul li img {
+    width: 45px;
 }
-li > p {
+
+.navigation ul li p {
     padding: 0 15px;
     font-size: var(--font-size-m);
     font-family: var(--font-family-raleway);
     font-weight: 700;
 }
-.user-login-container{
-    width: 90%;
 
-    img{
-        width: 50px;
-        height: 50px;
-    }
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos para o container de login do usuário */
+.user-login-container {
+    width: 90%;
+    justify-content: space-between;
+}
+
+.user-login-container>a>img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
 }
 
 /* Estilos para o overlay */
@@ -169,4 +203,132 @@ li > p {
 
 .overlay.open {
     display: block;
+}
+
+/* Desktop */
+/* Estilos gerais para o cabeçalho */
+.desktop {
+    background-color: var(--cor-primaria); /* Cor de fundo do cabeçalho */
+    padding: 15px; /* Espaçamento interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito flutuante */
+}
+
+.container_header{
+    all: unset;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.pesquisa input{
+    all: unset;
+    border-radius: 8px;
+    background: #FFF;
+    width: 90%;
+    padding: 10px 15px;
+    
+}
+.iconLogin{
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght'400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.iconLogin>span{
+    font-size: 35px;
+    
+ 
+}
+.iconLogin p{
+    width: max-content;
+}
+.carrinho_header{
+    
+    margin:0  10px;
+   
+}
+.carrinho_header span{
+    font-size: 33px;
+    cursor: pointer;
+}
+
+
+/* Estilos para a seção de perfil */
+.perfil-wrapper {
+    display: flex; /* Alinha os itens do perfil em linha */
+    justify-content: flex-end; /* Alinha à direita */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Estilos para a navegação */
+.navegacao-header-desk {
+    display: flex; /* Alinha os itens em linha */
+    justify-content: center; /* Centraliza a lista */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    font-family: var(--font-family-poppins);
+}
+
+/* Estilos para os itens da navegação */
+.navegacao-header-desk li {
+    margin: 0 2%; /* Espaçamento lateral */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Necessário para posicionar o <hr> */
+}
+
+/* Estilos para links na navegação */
+.navegacao-header-desk li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: black; /* Cor do texto */
+    font-size: var(--font-size-m); /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+/* Estilos para a linha horizontal */
+.navegacao-header-desk li hr {
+    width: 0; /* Largura inicial do hr */
+    border: 0; /* Remove a borda padrão */
+    height: 1.5px; /* Altura da linha */
+    background-color: rgba(0, 0, 0, 0.1); /* Cor da linha */
+    position: absolute;
+    bottom: 0; /* Alinha o <hr> abaixo do texto */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Move o <hr> para a esquerda pela metade da sua largura */
+    transition: width 0.2s; /* Transição suave para o hover */
+}
+
+/* Aumenta a largura da linha ao passar o mouse no <a> */
+.navegacao-header-desk li:hover hr {
+    width: 100%; /* Largura total do hr */
+    background-color: var(--cor-secundaria); /* Cor ao passar o mouse */
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .mobile {
+        display: flex;
+    }
+    .desktop {
+        display: none;
+    }
+    .container-menu{
+        width: 80%;
+    }
 }

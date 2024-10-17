@@ -3,8 +3,6 @@
 footer{
     background-color: var(--cor-secundaria);
     color: white;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     display: flex;
     padding: 30px;
