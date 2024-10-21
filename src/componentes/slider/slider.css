@@ -1,0 +1,15 @@
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+.slick-next{
+    right: 20px;
+}
+
+.slick-prev {
+    left: 20px;
+    z-index: 999;
+  }

@@ -3,10 +3,10 @@ import Footer from "../../componentes/footer/footer.js";
 import '../categoriasProdutos/barraCategoriaProdutos.css'
 import { Link } from "react-router-dom";
 
-function BarraCategoriaPrdutos() {
+function BarraCategoriaProdutos() {
   return (
     <>
-    <Header/>
+
     <div className="sliderCategoriaProdutos">
    <Link className="produtoCategoria"> <img src="/assets/produtos/Cervejas/SKOL_269ML.png" alt="" /> <p>Cervejas</p>    </Link>
    <Link className="produtoCategoria"> <img src="/assets/produtos/Gelos/MELANCIA.png" alt="" />  <p>Gelo</p>    </Link>
@@ -21,4 +21,4 @@ function BarraCategoriaPrdutos() {
   );
 }
 
-export default BarraCategoriaPrdutos;
+export default BarraCategoriaProdutos;

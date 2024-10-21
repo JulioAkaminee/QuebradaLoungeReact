@@ -7,12 +7,12 @@ import NosConheca from '../pages/NosConheca';
 import CadastroUsuario from '../pages/CadastroUsuario';
 import LoginUsuario from '../pages/LoginUsuario';
 import BarraCategoriaPrdutos from '../componentes/categoriasProdutos/barraCategoriaProdutos';
-
+import SimpleSlider from '../componentes/slider/slider';
 
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<BarraCategoriaPrdutos/>} exact />
+      <Route path="/" element={<Home/>} exact />
       <Route path="/localizacao" element={<Localizacao />} />
       <Route path="/nos-conheca" element={<NosConheca />} />
       <Route path="/cadastroUsuario" element={<CadastroUsuario />} />
